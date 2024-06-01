@@ -1,0 +1,15 @@
+version : "3.7"
+services :
+  micro :
+    container_name : micro
+    image : micro:v1
+    build :
+      context: .
+    ports :
+      - "4003:4003"
+    networks :
+      - proyectos-app
+
+networks:
+  proyectos-app:
+
